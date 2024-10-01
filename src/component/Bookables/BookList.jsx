@@ -1,7 +1,5 @@
 import {bookables} from "../../static.json"
 
-
-
 function BookList(){
     console.log("bookables", bookables)
     const group = "Rooms"
