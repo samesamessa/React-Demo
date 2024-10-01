@@ -1,33 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// 초기 App.jsx
 
+import './App.css'
+import {Car} from "./basic/List.jsx";
+import Garage from "./basic/List.jsx";
+import GarageKorean from "./basic/Objects.jsx";
+
+
+// index.html이 처음 요청으로 반환되는 페이지
+//       html은 더 만들지 않음. (SPA, single page application)
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+        {/* brand라는 property를 넘겨줌 */}
+        <Car brand="소나타"/>
+        <Garage/>
+        <GarageKorean/>
     </>
   )
 }
