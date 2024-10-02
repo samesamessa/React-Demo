@@ -1,7 +1,10 @@
+import UserPicker from "./UserPicker.jsx";
+import UserList from "./UserList.jsx";
+
 function UsersPage() {
     return (
         <main className="users-page">
-            <h4>사용자 현항</h4>
+            <UserList/>
         </main>
     )
 }

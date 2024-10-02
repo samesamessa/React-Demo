@@ -1,3 +1,5 @@
+import UserList from "./UserList.jsx";
+
 function UserPicker() {
     return (
         <select>
