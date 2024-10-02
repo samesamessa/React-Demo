@@ -32,6 +32,14 @@ export default function reducer(state, action){
             };
         }
 
+        case "PREV_BOOKABLE":
+        {
+            return {
+                ...state,
+                bookableIndex: (state.bookableIndex - 1 + action.payload) % action.payload
+            };
+        }
+
         default:    //꼭 필요함.
             return state;
 
